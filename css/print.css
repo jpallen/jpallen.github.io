@@ -1,0 +1,30 @@
+/* 
+*	Print Stylesheet
+*/
+
+
+
+
+/* General
+----------------------------------------------------------------------------------------------------*/
+
+body { 
+	background:#fff;
+	border:0;
+}
+body, h1, h2, h3 {
+	color:#000;
+}
+.section {
+	page-break-inside:avoid;
+}
+#wrapper, #main {
+	border:0;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	margin:0;
+}
+#control_wrap {
+	display:none;
+}
+/* widths */

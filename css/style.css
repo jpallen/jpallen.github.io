@@ -1,0 +1,444 @@
+/* 
+* Main Stylesheet
+*/
+
+
+
+
+/* Primary Elements
+----------------------------------------------------------------------------------------------------*/
+html,body {
+	margin:0;
+	padding:0;
+}
+body { 
+	background:#ebebeb url(../images/bg_body.gif);
+	color:#555;
+	border-top:3px solid #555;
+}
+body, 
+form.standard .textarea {
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+body, h4, h5 {
+	font-size:13px;
+	line-height:20px;
+}
+
+p {
+	margin:0;
+	padding:0 0 20px 0;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight:normal;
+	margin:0 0 15px 0;
+	padding:0;
+}
+
+h1 {
+	font-size:80px;
+	line-height:80px;
+	margin-bottom:20px;
+	margin-left:-5px;
+	font-weight:bold;
+	letter-spacing:-2.5px;
+	text-shadow:0px 0px 2px #999;
+}
+
+h2 {
+	font-size:21px;
+	line-height:25px;
+	margin-bottom:60px;
+	color:#999;
+	word-spacing:-1px;
+	letter-spacing:-0.5px;
+	text-shadow:0px 0px 2px #f0f0f0;
+}
+
+h3 {
+	font-size:17px;
+	line-height:17px;
+	font-weight:bold;
+	padding-bottom:6px;
+}
+
+h4, h5 {
+	margin:0;
+}
+
+h4 {
+	font-weight:bold;
+}
+h5 {
+	color:#999;
+}
+
+.section h3 {
+	border-bottom:1px solid #e9e9e9;
+}
+#wrapper {
+	width:784px;
+	border:1px solid #f2f2f2;
+	background:#f2f2f2 url(../images/bg_crosshatch.gif);
+	margin:40px auto 20px auto;
+}
+
+#main {
+	width:700px;
+	border:1px solid #fff;
+	background:#fff url(../images/bg_header_line.gif) no-repeat 2px 2px;
+	margin:40px auto;
+}
+#wrapper, 
+#main {
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+
+
+
+/* Columns and Sections
+----------------------------------------------------------------------------------------------------*/
+
+.col_wrap {
+	padding:60px 40px;
+}
+
+.section {
+	margin-bottom:40px;
+	position:relative;
+}
+
+.section_last {
+	margin-bottom:0;
+}
+
+.col_quarter,
+.col_half,
+.col_three_quarter {
+	display: inline;
+	float: left;
+	position: relative;
+	margin-right:20px;
+}
+.col_quarter {
+	width:140px;
+}
+.col_half {
+	width:300px;
+}
+.col_three_quarter {
+	width:460px;
+}
+.col_first { }
+.col_last {
+	margin-right:0;
+}
+
+
+
+/* Slide-down navigation
+----------------------------------------------------------------------------------------------------*/
+#panel {
+	background:#555;
+	color:#fff;
+	
+	-moz-box-shadow:0 3px 3px #ccc;
+	-webkit-box-shadow:0 3px 3px #ccc;	
+	box-shadow:0 3px 3px #ccc;	
+	
+	position:relative;
+	min-height:0;
+}
+#panel a:hover {
+	color:#fff;
+}
+#panel .col_wrap {
+	padding:16px 20px 0px 20px;
+	width:625px;
+}
+#panel .col_wrap,
+#control_wrap {
+	margin:0 auto;
+}
+#control_wrap {
+	width:780px;
+	position:relative;
+	height:3px;
+}
+a#panel_toggle {	
+	position:absolute;
+	top:-4px;
+	right:0;
+	
+	-moz-box-shadow:0 3px 3px #ccc;
+	-webkit-box-shadow:0 3px 3px #ccc;
+	box-shadow:0 3px 3px #ccc;
+	
+	width:95px; /* tab width */
+	height:20px;
+	
+	padding:6px 0 0 0;
+	
+	background:#555 url(../images/arrow_expand_collapse.png) no-repeat 5px 2px;
+	display:block;
+	overflow:hidden;
+	
+	font-size:9px;
+	text-transform:uppercase;
+	color:#ccc;
+	text-decoration:none;
+	
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+a#panel_toggle span {
+	display:block;
+	margin:-2px 0 0 26px;
+}
+#control_wrap .panel_active,
+a#panel_toggle:hover {
+	color:#eee;
+}
+#control_wrap .panel_active {
+	background-position:5px -28px;
+}
+
+
+/* Section Specific Styles
+----------------------------------------------------------------------------------------------------*/
+.section-education p {
+	padding:0 0 10px 0;
+}
+
+
+
+
+
+
+.promo-container {
+	position:relative;
+}
+.promo-navigation {
+	position:absolute;
+	bottom:20px;
+	right:20px;
+	z-index:20;
+}
+.promo-navigation a {
+	display:block;
+	float:left;
+	width:12px;
+	height:12px;
+	text-indent:-9999px;
+	margin-left:5px;
+}
+.promo-bottom-navigation  {
+	padding-bottom:20px;
+	clear:both;
+}
+.promo-bottom-navigation .promo-navigation {
+	bottom:0;
+	right:0;
+}
+.promo-navigation .activeSlide {
+	background:#ddd;
+}
+.promo-navigation a {
+	border:1px solid #ddd;
+}
+
+
+
+
+
+
+/* Form Styles
+----------------------------------------------------------------------------------------------------*/
+
+form textarea:focus,
+form input:focus { 
+	outline:0;  
+}
+
+form.standard .textbox,
+form.standard .textarea,
+form.standard .submit {
+	display:block;
+	border:1px solid #e9e9e9;
+	background:#fff;
+	color:#999;
+	padding:9px 8px;
+}
+form.standard .textbox:hover,
+form.standard .textarea:hover,
+form.standard .submit:hover {
+	border-color:#e0e0e0;
+}
+form.standard .textbox,
+form.standard .textarea {
+	margin-bottom:10px;
+	width:280px;
+}
+form.standard .textarea {
+	height:100px;
+	font-size:inherit;
+}
+form.standard .submit {
+	width:144px;
+	cursor:pointer;
+	padding:6px 5px 6px 0px;
+}
+form.standard .submit span {
+	display:block;
+	margin:0;
+	padding:0 15px 0 0;
+	background:url(../images/arrow_right_circle.png) no-repeat right top;
+	line-height:18px;
+}
+form.standard .submit:hover span {
+	background-position:right -30px;
+}
+
+form.standard .textbox,
+form.standard .submit,
+form.standard .textarea {
+	background:url(../images/bg_formfield.png) repeat-x left top;
+}
+form.standard .submit:hover {
+	color:#555;
+}
+form.standard .form-error,
+form.standard .form-error:hover {
+	border-left-color:#c00;
+	background:#ffd7d7;
+}
+
+
+
+
+/* Link Styles
+----------------------------------------------------------------------------------------------------*/
+
+a:link {
+	color:#6fa7cf;
+}
+a:visited {
+	color:#adc1cf;
+}
+a:hover {
+	color:#466982;
+}
+a:active {
+	color:#6fa7cf;
+}
+a { outline:0; }
+
+
+
+/* Other Styles
+----------------------------------------------------------------------------------------------------*/
+
+.right {
+	float:right;
+}
+.center {
+	text-align:center;
+}
+.hidden, .h {
+	display:none;
+}
+
+UL.clean, OL.clean {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+p.scrolltop {
+	margin-bottom:100px;
+	color:#ccc;
+}
+
+a img {
+	border:0;
+}
+.logo img {
+	padding-top:3px;
+}
+.clickable {
+	cursor:pointer;
+}
+.section a.scrollTop {
+	color:#ddd;
+	text-indent:-9999px;
+	display:block;
+	width:15px;
+	height:15px;
+	overflow:hidden;
+	background:url(../images/back_to_top_sections.gif) no-repeat;
+	position:absolute;
+	top:5px;
+	right:0;
+}
+.error {
+	color:#900;
+}
+
+
+
+
+
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://perishablepress.com/press/2009/12/06/new-clearfix-hack */
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* The following zoom:1 rule is specifically for IE6 + IE7. Move to separate stylesheet if invalid CSS is a problem. */
+* html .clearfix,
+*:first-child+html .clearfix {
+	zoom: 1;
+}
+
+
+
+
+/* CSS3 Shadows
+----------------------------------------------------------------------------------------------------*/
+
+.shadow {
+	-moz-box-shadow: 0px 0px 2px #ccc;
+	-webkit-box-shadow: 0px 0px 2px #ccc;
+	box-shadow: 0px 0px 2px #ccc;
+}
+
+
+
+
+
+
+
