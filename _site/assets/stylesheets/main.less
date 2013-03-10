@@ -1,0 +1,89 @@
+@import "../bootstrap/less/bootstrap.less";
+
+@import "../bootstrap/less/responsive.less";
+
+@red: #CB4B16;
+@green: #468966;
+@yellow: #FFB03B;
+@dirtyYellow: #b58900;
+@blueGrey: #586E75;
+
+@sidebarWidth: 25%;
+@sidebarBackgroundColor: lighten(@yellow, 30%);
+
+.main {
+	width: 100% - @sidebarWidth;
+	margin-left: @sidebarWidth;
+}
+
+.side-background {
+	background-color: @sidebarBackgroundColor;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;	
+	width: @sidebarWidth;
+}
+
+.side {
+	width: @sidebarWidth;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+article {
+	padding: 50px;
+	padding-top: 30px;
+	max-width: 600px;
+}
+
+aside {
+	font-size: @baseFontSize - 2px;
+	line-height: @baseLineHeight - 4px;
+	padding: 30px;
+	h1 {
+		font-size: 1em;
+		margin-bottom: 6px;
+		line-height: normal;
+		text-transform: uppercase;
+		a, a:hover {
+			color: @red;
+		}
+	}
+	h2 {
+		font-size: 1em;
+		margin-bottom: 6px;
+		line-height: normal;
+		text-transform: uppercase;
+		color: @green;
+	}
+	.published-using {
+		font-size: @baseFontSize - 4px;
+		color: @blueGrey;
+	}
+}
+
+ul.post-list {
+	list-style: none;
+	margin: 0;
+	h2 {
+		margin: 0;	
+		a {
+			color: @green;
+		}
+	}
+	time {
+		color: @blueGrey;
+		font-size: 0.85em;
+	}
+	li {
+		padding-bottom: 16px;
+	}
+}
+
+.published {
+	color: @red;
+}
+
+
