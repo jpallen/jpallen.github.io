@@ -53,7 +53,7 @@
 
 <p>Let me start by showing just how extreme the memory leak was. The graph below shows two very normal things that can happen in a Node.js app: connections coming in via WebSockets using the <a href='http://socket.io/'>Socket.IO</a> library, and uploading files. If we do either of these individually then there is no problem and the memory flattens off nicely, but when we send uploads and WebSocket connections together, <strong>BOOM</strong>, there is linear memory growth:</p>
 
-<p><img alt='Memory leaking Node.js process' src='/assets/images/posts/memory-leak.png' /></p>
+<p><img src='/assets/images/posts/memory-leak.png' alt='Memory leaking Node.js process' /></p>
 
 <p>The Node.js version is 0.8.21 and the Socket.IO version is 0.9.13 here.</p>
 
@@ -85,7 +85,7 @@ my-node-process&gt;require(&quot;heapdump&quot;).writeSnapshot()</code></pre>
 
 <p>To load the heap snapshot, open up the Chrome developer tools, and go to the &#8216;Profiles&#8217; tab. Right click in the left hand side bar, select &#8216;Load Heap Snapshot&#8217;, and load the snapshot that was taken previously by <code>heapdump</code>. The heap snapshot inspector lets one see all the objects in ones Node.js app&#8217;s memory at the time of the snapshot and shows how many of each object there are and how much memory they are using. After sorting by size, it was immediately clear that around 200Mb of my app&#8217;s memory was taken up by buffers. Expanding the Buffer list, I saw that there were many 10Mb Buffers hanging around. Whatever is creating and holding onto those is undoubtably the cause of the leak.</p>
 
-<p><img alt='Chrome Heap Snapshot Inspected' src='/assets/images/posts/chrome-heap-inspector.png' /></p>
+<p><img src='/assets/images/posts/chrome-heap-inspector.png' alt='Chrome Heap Snapshot Inspected' /></p>
 
 <p>Clicking on an object in the heap inspector shows one the object&#8217;s retaining tree. That is, the parent objects that hold a reference to that object, and the objects that hold a reference to those, and so on right up to the top level of your application. The way that Node.js&#8217;s garbage collecting works means that an object will not be removed from memory until there are no references to it from elsewhere in the app. By examining a few of these buffers, it was clear that they were being held onto by a <code>req.head</code> object which was referenced by a WebSocket object. At this point, Socket.IO was starting to look suspicious.</p>
 
@@ -153,17 +153,6 @@ require('tls').SLAB_BUFFER_SIZE = 100 * 1024 # 100Kb
 
 <p class="published">Published on <time>08 March 2013</time></p>
 
-
-<p>
-  <em>
-  Discuss this post on
-  
-  
-   
-  <a href="foo">Hacker News</a>
-  
-  </em>
-<p>
 
 
 <hr>

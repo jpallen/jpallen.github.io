@@ -3,7 +3,6 @@ title: Tracking down a memory leak in Node.js and Socket.IO
 tagline: 
 layout: post
 tags : [nodejs, socketio, development]
-hn: foo
 ---
 
 *If you are running* **Node.js 0.8** *and* **Socket.IO** *over* **HTTPS** *then you will be
