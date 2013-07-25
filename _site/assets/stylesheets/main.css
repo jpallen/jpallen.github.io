@@ -1154,13 +1154,10 @@ blockquote {
   border-left: 5px solid #eeeeee;
 }
 blockquote p {
-  margin-bottom: 0;
+  margin-bottom: 8px;
   font-size: 16px;
+  line-height: 22px;
   font-weight: 300;
-  line-height: 32.5px;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 32.5px;
 }
 blockquote small {
   display: block;
@@ -9319,4 +9316,15 @@ ul.post-list li {
 }
 .published {
   color: #cb4b16;
+}
+.figure {
+  text-align: center;
+}
+.figure .subfigure {
+  width: 190px;
+  display: inline-block;
+}
+.figure .caption {
+  font-weight: bold;
+  text-align: center;
 }

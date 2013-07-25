@@ -7,4 +7,5 @@ http://jpallen.net/pages.html
 http://jpallen.net/sitemap.txt
 http://jpallen.net/tags.html
 
+http://jpallen.net/2013/07/25/lifecycle-emails
 http://jpallen.net/2013/03/08/tracking-down-a-memory-leak-in-node-js-and-socket-io
