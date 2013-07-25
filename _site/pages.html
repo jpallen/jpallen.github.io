@@ -11,10 +11,10 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-	<script type="text/javascript" src="/assets/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery-1.7.2.min.js"></script>
     <link href="/assets/stylesheets/main.css"     rel="stylesheet" />
-	<link href="/assets/stylesheets/lightbox.css" rel="stylesheet" />
-	
+    <link href="/assets/stylesheets/lightbox.css" rel="stylesheet" />
+    
 </head>
 
   </head>
@@ -26,15 +26,16 @@
     <aside>
       <h1><a href="/">JPAllen</a></h2>
       <p>
-	  	Most of my time is taken up at the moment as the co-creator of
-	  	<a href="https://www.sharelatex.com">ShareLaTeX</a>, an online LaTeX
-		editor.
-	  </p>
+          Most of my time is taken up at the moment as the co-creator of
+          <a href="https://www.sharelatex.com">ShareLaTeX</a>, an online LaTeX
+        editor.
+      </p>
 
       <h2>Contact Me</h2>
-	  <p>
-		  <a href="mailto:me@jpallen.net">me@jpallen.net</a>
-	  </p>
+      <p>
+          <a href="mailto:me@jpallen.net">me@jpallen.net</a> <br/>
+          <a href="https://twitter.com/thejpallen">@thejpallen</a>
+      </p>
 
       <p class="published-using">
         This site is published with <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
@@ -122,18 +123,18 @@
     
 
 
-	<script type="text/javascript">
-		$("article img").each(function(i, img) {
-			img = $(img);
-			img.replaceWith(
-				'<a href="' + img.attr("src") + '" rel="lightbox"><img src="' +
-				img.attr("src") + '" alt="' + img.attr("alt") + '"></img></a>'
-			)
-		});
-	</script>
-	<script type="text/javascript" src="/assets/js/lightbox.js"></script>
-	<script type="text/javascript" src="/assets/js/prettify.js"></script>
-	<link href="/assets/stylesheets/prettify.css" rel="stylesheet" />
-	<script type="text/javascript">prettyPrint();</script>
+    <script type="text/javascript">
+        $("article img").each(function(i, img) {
+            img = $(img);
+            img.replaceWith(
+                '<a href="' + img.attr("src") + '" rel="lightbox"><img src="' +
+                img.attr("src") + '" alt="' + img.attr("alt") + '"></img></a>'
+            )
+        });
+    </script>
+    <script type="text/javascript" src="/assets/js/lightbox.js"></script>
+    <script type="text/javascript" src="/assets/js/prettify.js"></script>
+    <link href="/assets/stylesheets/prettify.css" rel="stylesheet" />
+    <script type="text/javascript">prettyPrint();</script>
   </body>
 </html>
