@@ -12,8 +12,8 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+figure, figcaption, footer, aside, hgroup,
+menu, nav, output, ruby, article, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -210,9 +210,9 @@ td {
 }
 
 
-/* Header */
+/* aside */
 
-header {
+aside {
 	background-color: #171717;
 	color: #FDFDFB;
   width:170px;
@@ -230,11 +230,11 @@ header {
 	-webkit-font-smoothing: antialiased;
 }
 
-p.header {
+p.aside {
 	font-size: 16px;
 }
 
-h1.header {
+h1.aside {
 	font-family: Arvo, sans-serif;
 	font-size: 30px;
 	font-weight: 300;
@@ -244,11 +244,11 @@ h1.header {
 }
 
 
-h1.header, a.header, a.name, header a{
+h1.aside, a.aside, a.name, aside a{
 	color: #fff;
 }
 
-a.header {
+a.aside {
 	text-decoration: underline;
 }
 
@@ -256,12 +256,12 @@ a.name {
 	white-space: nowrap;
 }
 
-header ul {
+aside ul {
   list-style:none;
   padding:0;
 }
 
-header li {
+aside li {
 	list-style-type: none;
   width:132px;
   height:15px;
@@ -285,7 +285,7 @@ header li {
 
 }
 
-header li:hover {
+aside li:hover {
 	background: #C3001D;
 	background: -moz-linear-gradient(top, #C3001D 0%, #950119 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
@@ -314,9 +314,9 @@ a.buttons:hover {
 }
 
 
-/* Section - for main page content */
+/* article - for main page content */
 
-section {
+article {
   width:650px;
   float:right;
   padding-bottom:50px;
@@ -340,7 +340,7 @@ footer {
     margin:0;
   }
 
-  header, section, footer {
+  aside, article, footer {
     float:none;
     position:static;
     width:auto;
@@ -352,20 +352,20 @@ footer {
 		padding:0;
 	}
 
-  header {
+  aside {
     padding-right:320px;
   }
 
-  section {
+  article {
     padding:20px 84px 20px 50px;
     margin:0 0 20px;
   }
 
-  header a small {
+  aside a small {
     display:inline;
   }
 
-  header ul {
+  aside ul {
     position:absolute;
     right:130px;
     top:84px;
@@ -377,12 +377,12 @@ footer {
     word-wrap:break-word;
   }
 
-  header {
+  aside {
     padding:10px 20px 0;
 		margin-right: 0;
   }
 
-	section {
+	article {
     padding:10px 0 10px 20px;
     margin:0 0 30px;
   }
@@ -391,14 +391,14 @@ footer {
 		margin: 0 0 0 30px;
 	}
 
-  header ul, header p.view {
+  aside ul, aside p.view {
     position:static;
   }
 }
 
 @media print, screen and (max-width: 480px) {
 
-  header ul li.download {
+  aside ul li.download {
     display:none;
   }
 

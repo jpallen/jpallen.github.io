@@ -3,50 +3,52 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    
     <title>{{ page.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <script src="/javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <script type="text/javascript" src="/assets/js/jquery-1.7.2.min.js"></script>
-    <link href="/assets/stylesheets/main.css"     rel="stylesheet" />
     <link href="/assets/stylesheets/lightbox.css" rel="stylesheet" />
-    
 </head>
 
   </head>
 
   <body>
+    <div class="wrapper">
 
-    <div class="side-background"></div>
-    <div class="side">
-    <aside>
-      <h1><a href="/">JPAllen</a></h2>
-      <p>
-          Most of my time is taken up at the moment as the co-creator of
-          <a href="https://www.sharelatex.com">ShareLaTeX</a>, an online LaTeX
-        editor.
-      </p>
+        <aside>
+          <h1><a href="/">JPAllen</a></h2>
+          <p>
+              Most of my time is taken up at the moment as the co-creator of
+              <a href="https://www.sharelatex.com">ShareLaTeX</a>, an online LaTeX
+            editor.
+          </p>
 
-      <h2>Contact Me</h2>
-      <p>
-          <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a> <br/>
-          <a href="https://twitter.com/thejpallen">@thejpallen</a>
-      </p>
+          <h2>Contact Me</h2>
+          <p>
+              <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a> <br/>
+              <a href="https://twitter.com/thejpallen">@thejpallen</a>
+          </p>
 
-      <p class="published-using">
-        This site is published with <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-      </p>
-    </aside>
-    </div>
+          <p class="published-using">
+            This site is published with <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          </p>
+      </aside>
 
-    <div class="main">
-    <article>
-      {{ content }}
-    </article>
+        <article>
+            {{ content }}
+        </article>
     </div>
 
     {% include JB/analytics %}
