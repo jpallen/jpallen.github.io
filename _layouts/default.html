@@ -25,34 +25,11 @@
   </head>
 
   <body>
-    <div class="wrapper">
-
-        <aside>
-          <h1><a href="/">JPAllen</a></h2>
-          <p>
-              Most of my time is taken up at the moment as the co-creator of
-              <a href="https://www.sharelatex.com">ShareLaTeX</a>, an online LaTeX
-            editor.
-          </p>
-
-          <h2>Contact Me</h2>
-          <p>
-              <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a> <br/>
-              <a href="https://twitter.com/thejpallen">@thejpallen</a>
-          </p>
-
-          <p class="published-using">
-            This site is published with <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          </p>
-      </aside>
-
-        <article>
-            {{ content }}
-        </article>
-    </div>
+    <article>
+        {{ content }}
+    </article>
 
     {% include JB/analytics %}
-
 
     <script type="text/javascript">
         $("article img").each(function(i, img) {

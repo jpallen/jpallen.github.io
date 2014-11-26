@@ -6,8 +6,6 @@ layout: default
 
 {{ content }}
 
-<p class="published">Published on <time>{{ page.date | date_to_long_string }}</time></p>
-
 {% if page.reddit or page.hn %}
 <p>
   <em>
@@ -25,22 +23,19 @@ layout: default
 <p>
 {% endif %}
 
-<hr>
-<div class="pagination">
-  <ul>
-  {% if page.previous %}
-    <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
-  {% else %}
-    <li class="prev disabled"><a>&larr; Previous</a></li>
-  {% endif %}
-    <li><a href="{{ BASE_PATH }}/">Archive</a></li>
-  {% if page.next %}
-    <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
-  {% else %}
-    <li class="next disabled"><a>Next &rarr;</a>
-  {% endif %}
-  </ul>
-</div>
-<hr>
+
+<footer>
+    <span class="published">Published on <time>{{ page.date | date_to_long_string }}</time></span>
+    <a href="{{ BASE_PATH }}/" class="all-posts">View All Posts</a>
+    
+    <div class="author">
+        <strong>About the author:</strong>
+        <a href="https://twitter.com/thejpallen">James Allen</a> 
+        is the founder of 
+        <a href="https://www.sharelatex.com">ShareLaTeX</a> 
+        and holds a PhD in Theoretical Physics from Durham University. 
+        He is currently interested in how technology can make scientists more efficient.
+    </div>
+</footer>
 {% include JB/comments %}
 
