@@ -4,7 +4,7 @@ layout: post
 author: James Allen
 ---
 
-Today I had my first experience teaching a Software Carpentry Workshop at the Atmospheric, Oceanic and Planetary Physics Department in Oxford. (There was another separate workshop running its second day in Oxford today as well.) The day went well and I feel that students left having enjoyed it and looking forward to coming back tomorrow!
+Today I had my first experience teaching a [Software Carpentry Workshop at the Atmospheric, Oceanic and Planetary Physics Department in Oxford](http://jpallen.net/2015-01-14-oxford/). (There was another separate workshop running its second day in Oxford today as well.) The day went well and I feel that students left having enjoyed it and looking forward to coming back tomorrow!
 
 I taught the shell in two halves in the morning, and my co-instructor Jens taught the basics of Python after lunch, also in two halves. We asked for feedback at the end of each one and half hour slot. I was worried this was excessive, but I'm glad we did because it allowed us to adjust the second half of each topic based on what people told us after the first. The shell in particular was a bit too basic for what the learners already knew, so I tried to go at a faster pace in the second half. I think the second half of the material was also naturally more engaging as it moved away from the absolute basics. The feedback suggested that pipes and grepping were the two favourite topics of the morning sessions.
 
