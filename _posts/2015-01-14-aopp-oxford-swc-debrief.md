@@ -1,5 +1,5 @@
 ---
-title: AOPP Oxford Software Carpentry Debrief
+title: AOPP Oxford Software Carpentry Workshop Debrief
 layout: post
 author: James Allen
 ---
