@@ -1,7 +1,7 @@
 ---
 layout: post
 author: James Allen
-title: AOPP Oxford Software Carpentry Workshop Summary
+title: AOPP Oxford Software Carpentry Workshop Summary (14-15th Jan 2015)
 ---
 
 This week I taught my first two day Software Carpentry Workshop at the department of Atmospheric, Oceanic and Planetary Physics in Oxford. It was amazing to see people go from knowing little about git and Python to being competant and enthusiastic in under 10 hours of actual teaching time. I've taught before, but never seen a group of people so quick to pick up the material, or so interested in learning it. The SWC materials, the workshop format and the self-selecting nature of the attendees all made for a great experience for everyone.
