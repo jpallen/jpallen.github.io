@@ -6,14 +6,14 @@ title: AOPP Oxford Software Carpentry Workshop Summary (14-15th Jan 2015)
 
 This week I taught my first two day Software Carpentry Workshop at the department of Atmospheric, Oceanic and Planetary Physics in Oxford. It was amazing to see people go from knowing little about git and Python to being competant and enthusiastic in under 10 hours of actual teaching time. I've taught before, but never seen a group of people so quick to pick up the material, or so interested in learning it. The SWC materials, the workshop format and the self-selecting nature of the attendees all made for a great experience for everyone.
 
-The only thing left to do is a little reflection, so here are some non-obvious things worked well:
+The only thing left to do is a little reflection, so here are some things that worked well:
 
 * Everything technical worked as it should: wifi, power sockets, projector, installations.
 * The logistics worked well: coffee was on time, lunch was easy to get and close by, everyone arrived on time.
 * With the exception of the shell which was too slow, the material was taught at a good pace and was enjoyed by most.
 * The multi choice questions answered with post-its were a big hit.
 
-Some things that could have been better:
+The more interesting list is some things that could have been better:
 
 * Learners didn't use the red post-its for help as much as they could have. A few people had problems that didn't get fixed until well after they were no longer following. I *think* this is because we didn't emphasise that they could be used anytime, and should be. Also, the first half of the first day was spent teaching material that everyone was mostly familiar with, so there wasn't much need for red post-its and their use wasn't engrained when it came to the next harder parts.
 * I didn't make the example data for the shell course available. This worked well for the Python part, and I should have done the same for the shell.
